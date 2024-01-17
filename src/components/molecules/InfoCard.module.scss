@@ -1,17 +1,22 @@
 .card {
   display: flex;
-  width: 260px;
+  width: 280px;
+  height: 120px;
   gap: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.541);
+  background-color: rgba(255, 255, 255, 0.541);
+  border-radius: 20px;
+  padding: 20px;
   &Icon {
-    width: 64px;
+    width: 72px;
   }
 
   &Name {
-    font-size: 18px;
+    font-size: 28px;
   }
 
   &Value {
-    font-size: 38px;
+    font-size: 52px;
     font-weight: 500;
   }
 }

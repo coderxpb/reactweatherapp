@@ -4,15 +4,26 @@
   padding: 20px;
   min-height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.contentDiv {
+  max-width: 1400px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 30px;
 }
 .cityName {
   font-size: 36px;
   margin: 0;
   font-weight: 400;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
 }
