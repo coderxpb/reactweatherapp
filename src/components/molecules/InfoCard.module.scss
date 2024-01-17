@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  width: 260px;
+  gap: 24px;
+  &Icon {
+    width: 64px;
+  }
+
+  &Name {
+    font-size: 18px;
+  }
+
+  &Value {
+    font-size: 38px;
+    font-weight: 500;
+  }
+}

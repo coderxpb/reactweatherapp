@@ -1,6 +1,8 @@
 import Searchbar from "../atoms/Searchbar";
 import TemperatureInfo from "../organisms/TemperatureInfo";
 import style from "./Weather.module.scss";
+import DayIcon from "../../assets/animatedicons/day.svg";
+import MiscInfo from "../organisms/MiscInfo";
 
 const Weather = () => {
   return (
@@ -10,7 +12,8 @@ const Weather = () => {
         <Searchbar placeholder={"Enter location..."} />
       </div>
       <div>
-        <TemperatureInfo />
+        <TemperatureInfo icon={DayIcon} />
+        <MiscInfo />
       </div>
     </div>
   );
