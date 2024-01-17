@@ -1,5 +1,18 @@
 .mainDiv {
   background: turquoise;
+  box-sizing: border-box;
+  padding: 20px;
   min-height: 100vh;
   width: 100vw;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cityName {
+  font-size: 36px;
+  margin: 0;
+  font-weight: 400;
 }

@@ -4,7 +4,10 @@ import style from "./Weather.module.scss";
 const Weather = () => {
   return (
     <div className={style.mainDiv}>
-      <Searchbar />
+      <div className={style.header}>
+        <p className={style.cityName}>Bangalore</p>
+        <Searchbar placeholder={"enter location..."} />
+      </div>
     </div>
   );
 };
