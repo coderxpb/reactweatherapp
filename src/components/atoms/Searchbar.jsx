@@ -10,6 +10,10 @@ const Searchbar = (props) => {
       <div className={style.searchbar}>
         <input
           value={searchText}
+          type="search"
+          onKeyUp={(e) => {
+            if (e.key === "Enter") onSearch(searchText);
+          }}
           onChange={(e) => setSearchText(e.target.value)}
           className={style.searchInput}
           placeholder={placeholder}

@@ -1,7 +1,6 @@
 import Searchbar from "../atoms/Searchbar";
 import TemperatureInfo from "../organisms/TemperatureInfo";
 import style from "./Weather.module.scss";
-import DayIcon from "../../assets/animatedicons/day.svg";
 import MiscInfo from "../organisms/MiscInfo";
 import { useEffect, useState } from "react";
 
@@ -58,7 +57,7 @@ const Weather = () => {
   }, []);
 
   return (
-    <div className={style.mainDiv}>
+    <div className={`${style.mainDiv} ${style[weatherData.main || "default"]}`}>
       <div className={style.contentDiv}>
         <div className={style.header}>
           <p className={style.cityName}>{weatherData.location}</p>
@@ -70,7 +69,7 @@ const Weather = () => {
         </div>
         {weatherData.main && (
           <div className={style.info}>
-            <TemperatureInfo icon={DayIcon} weatherData={weatherData} />
+            <TemperatureInfo weatherData={weatherData} />
             <MiscInfo weatherData={weatherData} />
           </div>
         )}
