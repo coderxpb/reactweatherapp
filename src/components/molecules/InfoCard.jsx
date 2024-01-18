@@ -1,12 +1,11 @@
 import style from "./InfoCard.module.scss";
-import Humidity from "../../assets/icons/humidity.svg";
-const InfoCard = () => {
+const InfoCard = ({ icon, title, value }) => {
   return (
     <div className={style.card}>
-      <img className={style.cardIcon} src={Humidity} />
+      <img className={style.cardIcon} src={icon} />
       <div className={style.cardText}>
-        <p className={style.cardName}>Humidity</p>
-        <p className={style.cardValue}>32dd</p>
+        <p className={style.cardName}>{title}</p>
+        <p className={style.cardValue}>{value}</p>
       </div>
     </div>
   );
