@@ -31,3 +31,13 @@
   font-size: 13px;
   margin: 6px 0 0 6px;
 }
+
+.mainDiv {
+  margin-top: 8px;
+}
+
+@media only screen and (max-width: 480px) {
+  .mainDiv {
+    margin-top: -4px;
+  }
+}

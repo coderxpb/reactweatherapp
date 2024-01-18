@@ -13,6 +13,57 @@
   width: 100%;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.cityName {
+  font-size: 36px;
+  margin: 0;
+  font-weight: 400;
+}
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contentDiv {
+    max-width: 800px;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  .contentDiv {
+    max-width: 480px;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cityName {
+    display: none;
+  }
+  .header {
+    justify-content: flex-end;
+  }
+}
+
 .loading {
   margin-top: 70px;
   text-align: center;
@@ -60,24 +111,6 @@
   100% {
     opacity: 0;
   }
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 30px;
-  width: 100%;
-}
-.cityName {
-  font-size: 36px;
-  margin: 0;
-  font-weight: 400;
-}
-.info {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
 }
 
 .thunderstorm {

@@ -20,15 +20,20 @@ const iconMap = {
 const TemperatureInfo = ({ weatherData }) => {
   return (
     <div className={style.tempInfo}>
+      <p className={style.cityName}>{weatherData.location}</p>
       <img
         className={style.weatherIcon}
         src={iconMap[weatherData.main] || weather}
       />
-      <p className={style.weatherDesc}>{weatherData.desc}</p>
-      <p className={style.weatherTemp}>{weatherData.tempC}° C</p>
-      <p className={style.weatherTempReal}>
-        Feels like {weatherData.feelsLike}° C
-      </p>
+      <div
+        style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      >
+        <p className={style.weatherDesc}>{weatherData.desc}</p>
+        <p className={style.weatherTemp}>{weatherData.tempC}° C</p>
+        <p className={style.weatherTempReal}>
+          Feels like {weatherData.feelsLike}° C
+        </p>
+      </div>
     </div>
   );
 };

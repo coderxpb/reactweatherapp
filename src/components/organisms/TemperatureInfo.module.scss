@@ -28,3 +28,67 @@
   font-size: 30px;
   font-weight: 400;
 }
+
+.cityName {
+  font-size: 18px;
+  margin-top: -24px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .weatherIcon {
+    margin-top: -80px;
+  }
+  .weatherDesc {
+    margin-top: -90px;
+  }
+
+  .weatherTemp {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  .tempInfo {
+    max-width: 360px;
+  }
+  .weatherIcon {
+    max-width: 480px;
+  }
+  .weatherDesc {
+    font-size: 28px;
+  }
+
+  .weatherTemp {
+    font-size: 70px;
+  }
+
+  .weatherTempReal {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cityName {
+    display: block;
+  }
+  .tempInfo {
+    max-width: 360px;
+  }
+  .weatherIcon {
+    max-width: 480px;
+  }
+  .weatherDesc {
+    font-size: 24px;
+  }
+
+  .weatherTemp {
+    font-size: 56px;
+  }
+
+  .weatherTempReal {
+    font-size: 18px;
+  }
+}

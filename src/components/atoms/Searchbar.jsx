@@ -6,7 +6,7 @@ const Searchbar = (props) => {
   const [searchText, setSearchText] = useState("");
 
   return (
-    <div style={{ marginTop: 8 }}>
+    <div className={style.mainDiv}>
       <div className={style.searchbar}>
         <input
           value={searchText}
