@@ -67,11 +67,21 @@ const Weather = () => {
             errorMsg={errorMsg}
           />
         </div>
-        {weatherData.main && (
+        {!loading && weatherData.main && (
           <div className={style.info}>
             <TemperatureInfo weatherData={weatherData} />
             <MiscInfo weatherData={weatherData} />
           </div>
+        )}
+        {loading && (
+          <p className={style.loading}>
+            Loading
+            <span className={style.ellipsisAnim}>
+              <span>.</span>
+              <span>.</span>
+              <span>.</span>
+            </span>
+          </p>
         )}
       </div>
     </div>

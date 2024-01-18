@@ -20,7 +20,10 @@ const iconMap = {
 const TemperatureInfo = ({ weatherData }) => {
   return (
     <div className={style.tempInfo}>
-      <img className={style.weatherIcon} src={iconMap[weatherData.main]} />
+      <img
+        className={style.weatherIcon}
+        src={iconMap[weatherData.main] || weather}
+      />
       <p className={style.weatherDesc}>{weatherData.desc}</p>
       <p className={style.weatherTemp}>{weatherData.tempC}° C</p>
       <p className={style.weatherTempReal}>
