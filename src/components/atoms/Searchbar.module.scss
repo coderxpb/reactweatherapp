@@ -1,0 +1,43 @@
+.searchbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.searchInput {
+  height: 34px;
+  width: 180px;
+  border-radius: 42px;
+  border: none;
+  outline: none;
+  padding: 2px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Urbanist";
+}
+
+.searchButton {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.errorMsg {
+  color: red;
+  font-size: 13px;
+  margin: 6px 0 0 6px;
+}
+
+.mainDiv {
+  margin-top: 8px;
+}
+
+@media only screen and (max-width: 480px) {
+  .mainDiv {
+    margin-top: -4px;
+  }
+}
