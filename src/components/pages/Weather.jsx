@@ -37,11 +37,15 @@ const Weather = () => {
 
   const formatWeatherData = (data) => {
     const newData = {};
+    console.log(data);
     newData.location = data.name;
     newData.main = data.weather[0].main.toLowerCase();
     newData.desc = data.weather[0].description;
     newData.tempC = (data.main.temp - 273.15).toFixed(2);
     newData.humidity = data.main.humidity;
+    newData.pressure = data.main.pressure;
+    newData.visibility = data.visibility / 1000;
+
     newData.windspeed = data.wind.speed;
     newData.feelsLike = (data.main.feels_like - 273.15).toFixed(2);
     newData.clouds = data.clouds.all;

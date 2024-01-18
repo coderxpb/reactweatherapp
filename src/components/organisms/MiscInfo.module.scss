@@ -1,6 +1,13 @@
 .cardGroup {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.cardRow {
+  display: flex;
   flex-wrap: wrap;
 
-  width: 50%;
+  gap: 48px;
 }
